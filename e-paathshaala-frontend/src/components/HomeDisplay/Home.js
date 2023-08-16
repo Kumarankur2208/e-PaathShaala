@@ -63,7 +63,7 @@ function Home() {
       {/* parallax */}
       <section className="home" id="home">
         <h1 className="home-parallax" data-speed={-5}>
-          find your course
+          find your course1
         </h1>
         <img
           className="home-parallax"
