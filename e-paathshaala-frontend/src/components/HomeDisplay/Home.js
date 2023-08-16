@@ -63,19 +63,19 @@ function Home() {
       {/* parallax */}
       <section className="home" id="home">
         <h1 className="home-parallax" data-speed={-5}>
-          find your car
+          find your course
         </h1>
         <img
           className="home-parallax"
           data-speed={6}
-          src="./images/HomeCar.png"
+          src="./images/students.png"
           alt=" "
         />{" "}
         {/* <a href="/Vehicles" className="btn1 home-parallax" data-speed={7}>
           explore cars
         </a> */}
         <Link to={"/Vehicles"} className=" btn1 home-parallax" data-speed={7}>
-          Explore Cars
+          Explore Courses
         </Link>
       </section>
       {/* paralax end */}
@@ -86,7 +86,7 @@ function Home() {
           <i className="fa-solid fa-house fa-beat-fade" />
           <div className="content">
             <h3>190+</h3>
-            <p>branches</p>
+            <p>Courses</p>
           </div>
         </div>
         <div className="icons">
@@ -94,22 +94,22 @@ function Home() {
           <i className="fa-solid fa-car fa-beat" />
           <div className="content">
             <h3>1000+</h3>
-            <p>Cars sold</p>
+            <p>Success Stories</p>
           </div>
         </div>
         <div className="icons">
           <i className="fa-solid fa-users-rectangle fa-beat" />
           <div className="content">
             <h3>450+</h3>
-            <p>happy clients</p>
+            <p>Eudcators</p>
           </div>
         </div>
         <div className="icons">
           <i className="fa-solid fa-car fa-beat" />
           <i className="fa-solid fa-car fa-beat" />
           <div className="content">
-            <h3>890+</h3>
-            <p>new cars</p>
+            <h3>89K+</h3>
+            <p>New Students</p>
           </div>
         </div>
       </section>

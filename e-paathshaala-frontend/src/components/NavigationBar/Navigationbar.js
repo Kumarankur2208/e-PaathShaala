@@ -52,15 +52,15 @@ const userRole = localStorage.getItem("userRole") === "true";
             Home
           </Link>
           <Link
-            to={"/Vehicles"}
+            to={"/Courses"}
             className="nav-link active"
             style={{ backgroundColor: "transparent" }}
           >
-            Vehicles
+            Courses
           </Link>
           {/* <a href="/Home#Services"> Services</a> */}
           <Link
-            to={"/Serv"}
+            to={"/Services"}
             className="nav-link active"
             style={{ backgroundColor: "transparent" }}
           >
@@ -78,14 +78,14 @@ const userRole = localStorage.getItem("userRole") === "true";
             className="nav-link active"
             style={{ backgroundColor: "transparent" }}
           >
-            Contact
+            Contact Us
           </Link>
           <Link
             to={"/about"}
             className="nav-link active"
             style={{ backgroundColor: "transparent" }}
           >
-            About
+            About Us
           </Link>
           {/* <Link
             to={"/UserDashboard"}
