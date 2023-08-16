@@ -36,8 +36,12 @@ const userRole = localStorage.getItem("userRole") === "true";
         <div id="menu-btn1" onClick={menuOnclick} className="fas fa-bars"></div>
 
         <Link to={"/home"} className="logo">
-          <span>Lelo</span>GAADI
-          <i className="fas fa-car-side" style={{ fontSize: "150%" }}></i>
+          e-<span>पाठ</span>SHAALA&nbsp;
+          {/* <i className="fas fa-car-side" style={{ fontSize: "150%" }}></i> */}
+          <i
+            class="fa-solid fa-chalkboard-user fa-xl"
+            style={{ fontSize: "150%" }}
+          ></i>
         </Link>
         <nav className="navbar">
           <Link
@@ -92,7 +96,7 @@ const userRole = localStorage.getItem("userRole") === "true";
           </Link> */}
           {isLoggedIn && (
             <Link
-              to={userRole ?  "/AdminDashboard" : "/UserDashboard"}
+              to={userRole ? "/AdminDashboard" : "/UserDashboard"}
               className="nav-link active"
               style={{ backgroundColor: "transparent" }}
             >
