@@ -4,6 +4,7 @@ import Navigationbar from "./components/NavigationBar/Navigationbar";
 import Home from "./components/HomeDisplay/Home";
 import Notfound from "./components/NotFound/NotFound";
 import Contact from "./components/ContactUsAboutUs/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <Route path="*" element={<Notfound />} />
         </Routes>
       </BrowserRouter>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
