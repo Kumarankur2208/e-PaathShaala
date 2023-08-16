@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Navigationbar from "./components/NavigationBar/Navigationbar";
 import Home from "./components/HomeDisplay/Home";
 import Notfound from "./components/NotFound/NotFound";
+import Contact from "./components/ContactUsAboutUs/Contact";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/contact" element={<Contact/>} />
         
 
           <Route path="*" element={<Notfound />} />
