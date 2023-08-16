@@ -4,7 +4,6 @@ import Navigationbar from "./components/NavigationBar/Navigationbar";
 import Home from "./components/HomeDisplay/Home";
 import Notfound from "./components/NotFound/NotFound";
 
-
 function App() {
   return (
     <>

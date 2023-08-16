@@ -3,6 +3,7 @@ import "../CSS/style.css";
 import { useEffect, useState } from "react";
 import Reviews from "../reviews/reviews";
 import { Link } from "react-router-dom";
+import { Carousel } from "bootstrap";
 
 function Home() {
   const [parallaxElements, setParallaxElements] = useState([]);
