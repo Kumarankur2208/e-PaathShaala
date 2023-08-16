@@ -1,0 +1,224 @@
+.contact{
+    background-image: url("./slide2.jpg") ;
+    /* background-size: 100%; */
+    padding-top: 20%;
+    aspect-ratio:unset;
+    size:0cap;
+    
+    background-attachment:scroll;
+    
+}
+
+.contact {
+  padding-top: 10rem;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  /* Styles for screens smaller than or equal to 768px width */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for screens between 768px and 1024px width */
+}
+
+@media (min-width: 1025px) {
+  /* Styles for screens larger than or equal to 1025px width */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+.my-list1A{
+  font-size: 22px;
+margin-top: 60px;
+
+  }
+
+.my-list1B{
+font-size: 16px;
+margin-top: 30px;
+color: gray;
+}
+.my-list1C{
+  margin-top: 20px;
+}
+
+.my-list2A{
+  font-size: 22px;
+margin-top: 60px;
+margin-bottom: 30px;
+
+
+  }
+
+.my-list2B{
+font-size: 15px;
+color: gray;
+}
+
+.my-list3A{
+  font-size: 22px;
+margin-top: 60px;
+margin-bottom: 30px;
+
+
+  }
+
+.my-list3B{
+font-size: 15px;
+color: gray;
+}
+
+.my-list4A{
+  font-size: 22px;
+margin-top: 60px;
+margin-bottom: 30px;
+}
+
+.my-list4B{
+font-size: 15px;
+color: gray;
+}
+
+.my-list4C{
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 40px;
+  }
+
+/* @media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+} */
+/* about start */
+.text-about h3 {
+  color: #fff;
+  font-size: 3rem;
+}
+.text-about p {
+  font-size: 1.5rem;
+  color: #ccc;
+  padding: 1rem 0;
+}
+
+
+/* aboutus Section Start */
+.aboutus .boxContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3.5rem;
+ 
+}
+.aboutus .boxContainer .box {
+  box-shadow: var(--box_shadow);
+  border: var(--border);
+  border-radius: 0.9rem;
+  background-color:#eae9e0 ;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+      
+}
+
+.aboutus .boxContainer .box:hover {
+  /* background: #e2ddba;
+  color: #fff; */
+  background: var(--black) !important;
+}
+
+.aboutus .boxContainer .box i {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  line-height: 6rem;
+  background: var(--main);
+  color: #000;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+
+.aboutus .boxContainer .box h3 {
+  font-size: 2.2rem;
+}
+.aboutus .boxContainer .box p {
+  line-height: 1.8;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+}
+.aboutus .boxContainer .box:hover h3 {
+  color: #fff;
+}
+.aboutus .boxContainer .box:hover p {
+  color: #fff;
+}
+.aboutus .boxContainer .box:hover i {
+  color: #fff;
+}
+
+.heading {
+  padding-bottom: 2rem;
+  font-size: 3rem;
+  text-align: center;
+}
+/* .contact .green_btn:hover, .white_btn:hover{
+	background-color: rgb(255, 184, 52) !important;
+} */
+/* aboutus Section End */
+
+
+/* Footer Start */
+/* .footer {
+  background: var(--light-yellow);
+  position: relative;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  color: var(--black);
+  font-size: 2.2rem;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+  color: var(--light-colour);
+  font-size: 1.4rem;
+  display: block;
+  padding: 1rem 0;
+} */
+/* .footer .box-container .box li{
+  color: var(--light-colour);
+  font-size: 1.4rem;
+  display: block;
+  padding: 1rem 0;
+} */
+
+/* .footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--black);
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+.strip {
+  background: var(--black);
+  width: 100%;
+  position: absolute;
+}
+.strip h3 {
+  color: #eee;
+  justify-content: center;
+  padding: 1.5rem;
+  text-decoration-line: underline;
+} */
+/*Footer End*/
