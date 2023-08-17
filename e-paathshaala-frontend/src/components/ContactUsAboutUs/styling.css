@@ -1,5 +1,5 @@
 .contact{
-    background-image: url("./slide2.jpg") ;
+    /* background-image: url("./slide2.jpg") ; */
     /* background-size: 100%; */
     padding-top: 20%;
     aspect-ratio:unset;
@@ -221,4 +221,4 @@ color: gray;
   padding: 1.5rem;
   text-decoration-line: underline;
 } */
-/*Footer End*/
+/* /Footer End/ */
