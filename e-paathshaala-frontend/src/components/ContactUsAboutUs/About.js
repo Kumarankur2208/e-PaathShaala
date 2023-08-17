@@ -107,9 +107,8 @@ function About() {
           <div className="carousel-inner">
             <div className="carousel-item active" data-bs-interval="10000">
               <img src={slide1} className="d-block w-100" alt="slide1" />
-              <div className="carousel-caption d-none d-md-block">
-                {/* <h5></h5> */}
-                <h3 className="text-white">About Us</h3>
+              <div className="carousel-caption d-none d-md-block badge bg-dark bg-gradient text-wrap opacity-75 fs-5">
+                <h3 className="text-white ">About Us</h3>
                 <p className="text-white pb-5">
                   Welcome to Your EdTech Company, where learning meets
                   technology! At Your EdTech, we are dedicated to
@@ -120,11 +119,17 @@ function About() {
                   become a leading player in the EdTech industry, serving
                   millions of learners around the world.
                 </p>
+
+                {/* <h5></h5> */}
               </div>
             </div>
             <div className="carousel-item" data-bs-interval="2000">
-              <img src={slide2} className="d-block w-100" alt="slide2" />
-              <div className="carousel-caption d-none d-md-block">
+              <img
+                src={slide2}
+                className="d-block w-100"
+                alt="slide2"
+              />
+              <div className="carousel-caption d-none d-md-block badge bg-dark bg-gradient text-wrap opacity-75 fs-5">
                 <h3 className="text-white">E-learning</h3>
                 <p className="text-white pb-5">
                   Our vision is to empower individuals with the knowledge and
@@ -135,8 +140,12 @@ function About() {
               </div>
             </div>
             <div className="carousel-item">
-              <img src={slide3} className="d-block w-100" alt="slide3" />
-              <div className="carousel-caption d-none d-md-block">
+              <img
+                src={slide3}
+                className="d-block w-100"
+                alt="slide3"
+              />
+              <div className="carousel-caption d-none d-md-block badge bg-dark bg-gradient text-wrap opacity-75 fs-5">
                 <h3 className="text-white">Global Edutech hub</h3>
                 <p className="text-white pb-5">
                   The Edutech website is designed to be a standalone educational
@@ -577,7 +586,7 @@ function About() {
               </div>
             </div>
             <div className="box">
-              <h3>Suraj Dnyaneshwar Kawal</h3>
+              <h3>Suraj Dnyaneshwar Kawale</h3>
               <img
                 src="./images/Kumar.jpg"
                 alt="Suraj Dnyaneshwar Kawal"
