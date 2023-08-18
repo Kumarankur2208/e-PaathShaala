@@ -64,7 +64,7 @@ function Home() {
       {/* parallax */}
       <section className="home" id="home">
         <h1 className="home-parallax" data-speed={-5}>
-          find your course1
+          find your course
         </h1>
         <img
           className="home-parallax"
@@ -123,56 +123,62 @@ function Home() {
         </h1>
         <div className="boxContainer">
           <div className="box">
-            <i className="fas fa-car" />
-            <h3>Car Selling</h3>
+            <i className="fas fa-mortar-board" />
+            <h3> E-Path-shala</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-              facilis sapiente suscipit explicabo natus ducimus?
+              we are believe in the power of technology to transform the
+              education process and the power of education to build innovative
+              future generations.
             </p>
             <button className="btn1">Read More</button>
           </div>
           <div className="box">
-            <i className="fas fa-tools" />
-            <h3>Parts Repair</h3>
+            <i className="fas fa-book" />
+            <h3>Lifelong Learning</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-              facilis sapiente suscipit explicabo natus ducimus?
+              We believe in lifelong learning and hence provide learning
+              solutions across the spectrum from Education, Vocational
+              Education, Higher Education and Corporate Learning.
             </p>
             <button className="btn1">Read More</button>
           </div>
           <div className="box">
-            <i className="fas fa-car-crash" />
-            <h3>Car Insurance</h3>
+            <i className="fas fa-snowflake" />
+            <h3>Deep Understanding</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-              facilis sapiente suscipit explicabo natus ducimus?
+              Our deep understanding of education and technology systems help us
+              to effectively address learning needs at all levels.
             </p>
             <button className="btn1">Read More</button>
           </div>
           <div className="box">
-            <i className="fas fa-car-battery" />
-            <h3>Battery Replacement</h3>
+            <i className="fas fa-line-chart" />
+            <h3>Student Success</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-              facilis sapiente suscipit explicabo natus ducimus?
+              Our primary focus has always been to ensure successful learning
+              outcomes and improved performance for our customers.
             </p>
             <button className="btn1">Read More</button>
           </div>
           <div className="box">
-            <i className="fas fa-gas-pump" />
-            <h3>Oil Change</h3>
+            <i className="fas fa-tasks" />
+            <h3>Assignments & Quiz</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-              facilis sapiente suscipit explicabo natus ducimus?
+              Information provide students with clear guidance on what is
+              expected of them, how to approach the assignment, and how it will
+              be evaluated as well as quizes are provided for practice.
             </p>
             <button className="btn1">Read More</button>
           </div>
           <div className="box">
             <i className="fas fa-headset" />
-            <h3>24*7 Support</h3>
+            <h3>Learning Never Sleeps</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-              facilis sapiente suscipit explicabo natus ducimus?
+              Unlock a world of knowledge at any time, day or night. Our
+              educational website is here for you 24/7, ready to empower your
+              learning journey. Whether it's mastering a new skill, exploring
+              fascinating subjects, or enhancing your expertise, we've got you
+              covered.
             </p>
             <button className="btn1">Read More</button>
           </div>

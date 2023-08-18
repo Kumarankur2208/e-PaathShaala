@@ -74,14 +74,14 @@ const userRole = localStorage.getItem("userRole") === "true";
             Featured
           </Link>
           <Link
-            to={"/contact"}
+            to={"/ContactUs"}
             className="nav-link active"
             style={{ backgroundColor: "transparent" }}
           >
             Contact Us
           </Link>
           <Link
-            to={"/about"}
+            to={"/AboutUs"}
             className="nav-link active"
             style={{ backgroundColor: "transparent" }}
           >

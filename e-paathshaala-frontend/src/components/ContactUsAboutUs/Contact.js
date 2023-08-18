@@ -109,7 +109,7 @@ const Contactus = () => {
 
   return (
     <>
-      <section className="contact" id="contact">
+      <section className="contact m-5" id="contact">
         <div className="contact-form-container">
           <div className={styles.sendmessage_container}>
             <div className={styles.sendmessage_form_container}>
