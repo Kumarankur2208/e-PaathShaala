@@ -1,0 +1,84 @@
+/* footer.css */
+
+/* Styles for the footer container */
+.footer {
+  background-color: #161c1d;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.container-fluid {
+  background-color: #43c6db;
+}
+
+/* Styles for the rows in the footer */
+.row.p-3 {
+  margin: 0;
+}
+
+.single-box {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.single-box h2 {
+  color: #161c1d;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.single-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.route-link,
+.about-link {
+  text-decoration: none;
+  color: #161c1d;
+  transition: color 0.3s ease;
+}
+
+.route-link:hover,
+.about-link:hover {
+  color: #43c6db;
+}
+
+/* Styles for the social icons */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socials svg {
+  width: 30px;
+  height: 30px;
+  fill: #161c1d;
+  transition: fill 0.3s ease;
+}
+
+.socials svg:hover {
+  fill: #43c6db;
+}
+
+/* Styles for the bottom row */
+.row.text-center.p-4 {
+  background-color: #81d0ee;
+  margin: 0;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 0.8rem;
+  border-top: 1px solid #fff;
+}
+
+.row.text-center.p-4 h6 {
+  margin: 0;
+}
+
+.text-right h6 {
+  font-size: 0.8rem;
+}
