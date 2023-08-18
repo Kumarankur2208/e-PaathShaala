@@ -137,7 +137,14 @@ const userRole = localStorage.getItem("userRole") === "true";
               style={{ backgroundColor: "transparent" }}
             >
               {/* <button onClick={loginonclick} className="btn1"> */}
-              <button className="btn1">Login</button>
+              <button
+                className="btn1"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Click here to Log-In"
+              >
+                Login
+              </button>
               <i className="far fa-user"></i>
             </Link>
           )}
