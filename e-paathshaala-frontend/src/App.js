@@ -9,6 +9,8 @@ import StudentDashboard from "./components/Student Dashboard/StudentDashboard";
 import AdminDashboard from "./components/Admin Dashboard/AdminDashboard";
 import FacultyDashboard from "./components/Faculty Dashboard/FacultyDashboard";
 import About from "./components/ContactUsAboutUs/About";
+import LoginPage from "./components/Login SignUp/LoginPage";
+import SignupPage from "./components/Login SignUp/SignupPage";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/ContactUs" element={<Contact />} />
           <Route path="/AboutUs" element={<About />} />
+          <Route path="/Login" element={<LoginPage />} />
+          <Route path="/Signup" element={<SignupPage />} />
           <Route path="/StudentDashboard" element={<StudentDashboard />} />
           <Route path="/FacultyDashboard" element={<FacultyDashboard />} />
           <Route path="/AdminDashboard" element={<AdminDashboard />} />
