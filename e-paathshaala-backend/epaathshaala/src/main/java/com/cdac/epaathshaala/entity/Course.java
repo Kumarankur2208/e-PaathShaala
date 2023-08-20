@@ -2,6 +2,7 @@ package com.cdac.epaathshaala.entity;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.List;
 
 @Entity
 @Table(name = "courses")
@@ -10,8 +11,8 @@ public class Course {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long course_id;
 
-    private String course_name;
-    private String course_description;
+    private String courseName;
+    private String courseDescription;
 
     @ManyToOne
     @JoinColumn(name = "faculty_id")
@@ -27,6 +28,10 @@ public class Course {
     private boolean isFeatured; // Indicates if the course is featured on the platform
 //    private String prerequisites; // Any prerequisites for the course
 
+    
+    @OneToMany(mappedBy = "course")
+    private List<Lecture> lectures;
+    
     // Constructors, getters, setters
 
 }
