@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "./CreateCourse.css"; 
+import "./CreateCourse.css";
 
 const CreateCourse = () => {
   const [courseData, setCourseData] = useState({
@@ -38,10 +38,13 @@ const CreateCourse = () => {
   };
 
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value, type, checked } = e.target;
+
+    const newValue = type === "checkbox" ? checked : value;
+
     setCourseData((prevData) => ({
       ...prevData,
-      [name]: value,
+      [name]: newValue,
     }));
 
     setErrors((prevErrors) => ({
@@ -56,20 +59,61 @@ const CreateCourse = () => {
       return;
     }
 
+    //     try {
+    //       const response = await axios.post(
+    //         "http://localhost:8080/api/v1/course", // Adjust endpoint
+    //         courseData
+    //       );
+    //       console.log("Course creation response:", response.data);
+    //       toast.success("Course created successfully!");
+    //     } catch (error) {
+    //       toast.error("Course creation failed. Please check your input data.");
+    //     }
+    //   };
+
     try {
-      const response = await axios.post(
-        "http://localhost:8080/api/v1/course", // Adjust endpoint
-        courseData
-      );
-      console.log("Course creation response:", response.data);
-      toast.success("Course created successfully!");
+      const response = await fetch("http://localhost:8080/api/v1/courses", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          courseName: courseData.courseName,
+          courseDescription: courseData.courseDescription,
+          faculty_id: courseData.facultyId,
+          price: courseData.price,
+          duration: courseData.duration,
+          level: courseData.level,
+          category: courseData.category,
+          is_featured: courseData.isFeatured,
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || "An error occurred.");
+      }
+      navigate("/home");
     } catch (error) {
-      toast.error("Course creation failed. Please check your input data.");
+      toast.error(
+        error.message || "Course Creation failed. Please check your input data."
+      );
     }
   };
 
+useEffect(() => {
+  // Retrieve userId from local storage when the component mounts
+  const storedUserId = localStorage.getItem("userId");
+  if (storedUserId) {
+    setCourseData((prevData) => ({
+      ...prevData,
+      facultyId: storedUserId,
+    }));
+  }
+}, []);
+
   return (
-    <section style={{ maxWidth: 1000, marginTop: 100 }}>
+    <section style={{ maxWidth: 10000, marginTop: 100 }}>
       <div className="create-course-container">
         <h2>Create a New Course</h2>
         <form className="create-course-form" onSubmit={handleSubmit}>
@@ -160,7 +204,9 @@ const CreateCourse = () => {
             />
           </div>
           {/* Add more form fields as needed */}
-          <button type="submit">Create Course</button>
+          <button className="btn1" type="submit">
+            Create Course
+          </button>
         </form>
       </div>
     </section>
