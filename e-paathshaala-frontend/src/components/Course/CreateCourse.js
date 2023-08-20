@@ -58,7 +58,7 @@ const CreateCourse = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/v1/create-course", // Adjust endpoint
+        "http://localhost:8080/api/v1/course", // Adjust endpoint
         courseData
       );
       console.log("Course creation response:", response.data);
