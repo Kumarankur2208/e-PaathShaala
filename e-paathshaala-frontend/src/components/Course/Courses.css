@@ -1,0 +1,52 @@
+/* Courses.css */
+
+/* Overall section styling */
+.courses {
+    margin-top: 100px;
+  }
+  
+  /* Header styling */
+  .courses h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Filters section styling */
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Filter input styling */
+  .filters label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  /* Course card styling */
+  .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+  }
+  
+  /* Card body styling */
+  .card-body {
+    padding: 20px;
+  }
+  
+  /* Card title styling */
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Card text styling */
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
