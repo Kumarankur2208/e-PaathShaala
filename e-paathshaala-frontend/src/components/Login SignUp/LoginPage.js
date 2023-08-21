@@ -72,10 +72,10 @@ const LoginPage = () => {
       const expirationTimestamp =
         Date.now() + tokenExpiration * 24 * 60 * 60 * 1000;
       if (response.data) {
-        const { token, id, username, email, password, role } =
+        const { token, user_id, username, email, password, role } =
           response.data;
         localStorage.setItem("token", token);
-        localStorage.setItem("userId", id);
+        localStorage.setItem("userid", user_id);
         localStorage.setItem("username", username);
         localStorage.setItem("userEmail", email);
         localStorage.setItem("userPassword", password);

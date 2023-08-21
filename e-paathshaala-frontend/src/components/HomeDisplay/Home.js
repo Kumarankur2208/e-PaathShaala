@@ -75,7 +75,7 @@ function Home() {
         {/* <a href="/Vehicles" className="btn1 home-parallax" data-speed={7}>
           explore cars
         </a> */}
-        <Link to={"/Vehicles"} className=" btn1 home-parallax" data-speed={7}>
+        <Link to={"/Courses"} className=" btn1 home-parallax" data-speed={7}>
           Explore Courses
         </Link>
       </section>

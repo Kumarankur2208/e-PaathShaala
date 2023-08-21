@@ -31,7 +31,110 @@ public class Course {
     
     @OneToMany(mappedBy = "course")
     private List<Lecture> lectures;
+
+
+    
+	public Long getCourse_id() {
+		return course_id;
+	}
+
+
+	public void setCourse_id(Long course_id) {
+		this.course_id = course_id;
+	}
+
+
+	public String getCourseName() {
+		return courseName;
+	}
+
+
+	public void setCourseName(String courseName) {
+		this.courseName = courseName;
+	}
+
+
+	public String getCourseDescription() {
+		return courseDescription;
+	}
+
+
+	public void setCourseDescription(String courseDescription) {
+		this.courseDescription = courseDescription;
+	}
+
+
+	public User getFaculty() {
+		return faculty;
+	}
+
+
+	public void setFaculty(User faculty) {
+		this.faculty = faculty;
+	}
+
+
+	public BigDecimal getPrice() {
+		return price;
+	}
+
+
+	public void setPrice(BigDecimal price) {
+		this.price = price;
+	}
+
+
+	public String getDuration() {
+		return duration;
+	}
+
+
+	public void setDuration(String duration) {
+		this.duration = duration;
+	}
+
+
+	public String getLevel() {
+		return level;
+	}
+
+
+	public void setLevel(String level) {
+		this.level = level;
+	}
+
+
+	public String getCategory() {
+		return category;
+	}
+
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+
+	public boolean isFeatured() {
+		return isFeatured;
+	}
+
+
+	public void setFeatured(boolean isFeatured) {
+		this.isFeatured = isFeatured;
+	}
+
+
+	public List<Lecture> getLectures() {
+		return lectures;
+	}
+
+
+	public void setLectures(List<Lecture> lectures) {
+		this.lectures = lectures;
+	}
     
     // Constructors, getters, setters
+    
+    
 
 }
